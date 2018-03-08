@@ -1,0 +1,147 @@
+*{box-sizing: border-box;}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+.clear{
+    clear: both;
+}
+/* MENU */
+
+/* END MENU */
+.menu{
+    padding: 0 1.5em;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.item{
+    display: inline-block;
+    /* border: 1px solid blue; */
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.item a{
+    display: block;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+/* BANNER */
+.banner{
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+.intro{
+    padding-top: 15%;
+    padding-left: 10%;
+    color: white;
+}
+/* END BANNER */
+
+/* CONTENT */
+.content{
+    padding: 1em;
+}
+.info{
+    padding: 0 1em;
+}
+
+.col{
+    width: 33.3333%;
+    float: left;
+    min-height: 1px;
+    padding: 1em;
+}
+.col img{
+    width: 100%;
+    display: block;
+}
+.pd-t{
+    padding-top: 33px;
+}
+/* END CONTENT */
+
+/* FOOTER */
+.footer{
+    padding: 1em;
+    background-color: #dddddd;
+}
+/* END FOOTER */
+/* LOGIN */
+label{
+    min-width: 120px;
+    display: inline-block;
+}
+.btn{
+    background-color: orange;
+    color: white;
+    padding: 1em;
+    border: 0;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+#user,
+#pass{
+    margin-top: 5px;
+    padding: 0.3em;
+}
+/* END LOGIN */
+/* RESPONSIVE */
+@media (max-width: 991px){
+    .menu{
+        background-color: #566A6f;
+    }
+    .item a{ color: #fff;}
+    .col{
+        width: 50%;
+    }
+    .footer .col{
+        width: 100%;
+    }
+    .intro{
+        color:black;
+        background-color: #fff;
+        padding: 1em 2em;
+    }
+    .banner{
+        background-image: none;
+        height: auto;
+        border-bottom: 1px solid #ccc;
+    }
+    .container,
+    .footer{
+        background-color: #fff;
+    }
+}
+@media (max-width: 767px){
+    .col{
+        width: 100%;
+    }
+    .menu{
+        background-color: #566a6f;
+    }
+    .item a{
+        font-size: 0.8em;
+        padding: 1em .5em;
+    }
+    .banner{
+        background-image: none;
+        border-bottom-width: 0;
+    }
+    
+}
